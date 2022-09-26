@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" minHeight="528.0" minWidth="856.0" prefHeight="528.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.assignment.controller.PairController">
+   <children>
+      <Button fx:id="selectorButton" layoutX="191.0" layoutY="127.0" mnemonicParsing="false" onAction="#chooseFile" text="Select A File" />
+      <TableView fx:id="recordTable" layoutX="191.0" layoutY="189.0" prefHeight="200.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="personnelId1" prefWidth="110.0" text="Employee ID #1" />
+          <TableColumn fx:id="personnelId2" prefWidth="147.0" text="Employee ID #2" />
+            <TableColumn fx:id="projectId" prefWidth="93.0" text="Project ID" />
+            <TableColumn fx:id="daysWorkedWith" minWidth="0.0" prefWidth="142.0" text="Days worked" />
+        </columns>
+      </TableView>
+      <Button fx:id="executorButton" layoutX="283.0" layoutY="127.0" mnemonicParsing="false" onAction="#fillTable" text="Analyze File" />
+   </children>
+</Pane>
